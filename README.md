@@ -796,17 +796,17 @@ MergeTree, что позволяет с высокой производител�
 
 `user`: по user_id
 
-`message`: по message_id
+`message`: по conversation_id
 
-`post`: по post_id
+`post`: по creator_id
 
-`comment`: по comment_id
+`comment`: по post_id
 
-`voice`: по voice_id
+`voice`: по post_id, message_id
 
-`photo`: по photo_id
+`photo`: по user_id, message_id, post_id, 
 
-`video`: по video_id
+`video`: по post_id, message_id
 
 ## 7. Алгоритмы
 
