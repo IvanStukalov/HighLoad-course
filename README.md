@@ -778,11 +778,11 @@ MergeTree, что позволяет с высокой производител�
 
 `conversation`: hash по conversation_id
 
-`message`: hash по message_id, hash по (conversation_id, creation_time) для сортировки
+`message`: hash по message_id, btree по (conversation_id, creation_time) для сортировки
 
-`post`: hash по post_id, hash по (creator_id, creation_time) для сортировки
+`post`: hash по post_id, btree по (creator_id, creation_time) для сортировки
 
-`comment`: hash по comment_id, hash по (post_id, creation_time, creator_id) для сортировки
+`comment`: hash по comment_id, btree по (post_id, creation_time, creator_id) для сортировки
 
 `voice`: hash по voice_id
 
@@ -860,11 +860,11 @@ MergeTree, что позволяет с высокой производител�
 
 В качестве микросервисов можно выделить:
 
-* Авторизация и регистрация
-* Мессенждер
-* Посты
-* Комментарии
-* Профиль пользователя
+* Auth - Авторизация
+* Messanger - Мессенждер
+* Post - Посты
+* Comment - Комментарии
+* User - Профиль пользователя + Регистрация
 
 ### БД и кэш
 
